@@ -88,7 +88,6 @@ class AppInventory:
                     'price': item_data['price'],
                     'stock': item_data['stock']
                 })
-            
             df = pd.DataFrame(data_list)
             name_file = input("Input Name File: ")
             df.to_csv(f'{name_file}.csv', index=False)
